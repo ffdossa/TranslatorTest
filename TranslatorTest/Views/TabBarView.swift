@@ -13,6 +13,8 @@ struct TabBarView: View {
     let tabBarItems: [(image: String, title: String)] = [
         ("messages", "Translator"),
         ("settings", "Settings")
+//        ("volume-high", "Sounds"),
+//        ("note", "Articles")
     ]
     
     var body: some View {
@@ -27,19 +29,18 @@ struct TabBarView: View {
                         tabSelected = index + 1
                     } label: {
                         VStack {
-                            
                             Image(tabBarItems[index].image)
                                 .tint(Color.init(hexString: "#292D32"))
                             
                             Text(tabBarItems[index].title)
                                 .font(.caption2)
                                 .foregroundStyle(Color.init(hexString: "#292D32"))
-                            
                         }
                     }
                 }
             }
         }
+        .padding(.bottom)
     }
 }
 

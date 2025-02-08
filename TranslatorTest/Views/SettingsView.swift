@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct SettingsView: View {
+    @StateObject var viewModel = SettingsViewViewModel()
+    
     var body: some View {
         NavigationView {
             VStack(spacing: 14) {
@@ -37,11 +39,19 @@ struct SettingsView: View {
                 
                 Spacer()
             }
-            .navigationTitle("Settings")
-            .padding()
-            
             .frame(maxWidth: .greatestFiniteMagnitude, maxHeight: .greatestFiniteMagnitude)
+            .padding(.leading)
+            .padding(.trailing)
             
+            .toolbar {
+                ToolbarItem(placement: .principal) {
+                    Text("Settings")
+                        .font(.largeTitle)
+                        .bold()
+                        .foregroundStyle(Color.init(hexString: "#292D32"))
+                }
+            }
+
             .background(
                 .linearGradient(Gradient(colors: [Color.init(hexString: "#F3F5F6"), Color.init(hexString: "#C9FFE0")]), startPoint: .top, endPoint: .bottom))
         }
