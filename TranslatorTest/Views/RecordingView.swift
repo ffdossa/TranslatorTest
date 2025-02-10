@@ -11,14 +11,14 @@ import SDWebImageSwiftUI
 
 
 struct RecordingView: View {
-    @StateObject var viewModel = RecordingViewViewModel()
-
-    
-    var body: some View {
-        VStack {
-            
-        }
+  @StateObject var viewModel = RecordingViewViewModel()
+  
+  
+  var body: some View {
+    VStack {
+      
     }
+  }
 }
 
 
@@ -27,5 +27,5 @@ struct RecordingView: View {
 
 
 #Preview {
-    RecordingView()
+  RecordingView()
 }

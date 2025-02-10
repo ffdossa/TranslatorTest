@@ -28,7 +28,7 @@ struct ListenButtonView: View {
     
     
     var body: some View {
-        if micAccessGranted {
+      if micAccessGranted == true {
             Button {
                 // action
             } label: {
@@ -46,9 +46,9 @@ struct ListenButtonView: View {
                         
                     }
                 }
-            }
-            .onAppear {
-                checkMicrophonePermission()
+                .onAppear {
+                    checkMicrophonePermission()
+                }
             }
         } else {
             Button {
@@ -64,12 +64,12 @@ struct ListenButtonView: View {
                         Text("Start Speak")
                             .bold()
                             .foregroundStyle(Color.init(hexString: "#393736"))
-                        
                     }
                 }
             }
         }
     }
+    
     func checkMicrophonePermission() {
         let permission = AVAudioSession.sharedInstance().recordPermission
         micAccessGranted = (permission == .granted)

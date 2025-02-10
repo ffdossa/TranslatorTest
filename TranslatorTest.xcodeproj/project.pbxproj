@@ -8,32 +8,49 @@
 
 /* Begin PBXBuildFile section */
 		AB0D333E2D57747E008AA9B4 /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = AB0D333D2D57747E008AA9B4 /* SDWebImageSwiftUI */; };
+		AB43D1E22D59096F003D39E3 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB43D1C92D59096F003D39E3 /* Extensions.swift */; };
+		AB43D1E32D59096F003D39E3 /* RecordingViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB43D1D02D59096F003D39E3 /* RecordingViewViewModel.swift */; };
+		AB43D1E42D59096F003D39E3 /* ResultViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB43D1D12D59096F003D39E3 /* ResultViewViewModel.swift */; };
+		AB43D1E52D59096F003D39E3 /* SettingsViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB43D1D22D59096F003D39E3 /* SettingsViewViewModel.swift */; };
+		AB43D1E62D59096F003D39E3 /* TranslatorViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB43D1D32D59096F003D39E3 /* TranslatorViewViewModel.swift */; };
+		AB43D1E72D59096F003D39E3 /* ListenButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB43D1D52D59096F003D39E3 /* ListenButtonView.swift */; };
+		AB43D1E82D59096F003D39E3 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB43D1D62D59096F003D39E3 /* MainView.swift */; };
+		AB43D1E92D59096F003D39E3 /* RecordingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB43D1D72D59096F003D39E3 /* RecordingView.swift */; };
+		AB43D1EA2D59096F003D39E3 /* ResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB43D1D82D59096F003D39E3 /* ResultView.swift */; };
+		AB43D1EB2D59096F003D39E3 /* SettingButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB43D1D92D59096F003D39E3 /* SettingButtonView.swift */; };
+		AB43D1EC2D59096F003D39E3 /* SettingLinkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB43D1DA2D59096F003D39E3 /* SettingLinkView.swift */; };
+		AB43D1ED2D59096F003D39E3 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB43D1DB2D59096F003D39E3 /* SettingsView.swift */; };
+		AB43D1EE2D59096F003D39E3 /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB43D1DC2D59096F003D39E3 /* TabBarView.swift */; };
+		AB43D1EF2D59096F003D39E3 /* TranslatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB43D1DD2D59096F003D39E3 /* TranslatorView.swift */; };
+		AB43D1F02D59096F003D39E3 /* TranslatorTestApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB43D1E12D59096F003D39E3 /* TranslatorTestApp.swift */; };
+		AB43D1F12D59096F003D39E3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB43D1CB2D59096F003D39E3 /* Preview Assets.xcassets */; };
+		AB43D1F22D59096F003D39E3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB43D1CD2D59096F003D39E3 /* Assets.xcassets */; };
+		AB43D1F32D59096F003D39E3 /* recording.gif in Resources */ = {isa = PBXBuildFile; fileRef = AB43D1CE2D59096F003D39E3 /* recording.gif */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AB43D1C92D59096F003D39E3 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		AB43D1CB2D59096F003D39E3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		AB43D1CD2D59096F003D39E3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AB43D1CE2D59096F003D39E3 /* recording.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = recording.gif; sourceTree = "<group>"; };
+		AB43D1D02D59096F003D39E3 /* RecordingViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordingViewViewModel.swift; sourceTree = "<group>"; };
+		AB43D1D12D59096F003D39E3 /* ResultViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewViewModel.swift; sourceTree = "<group>"; };
+		AB43D1D22D59096F003D39E3 /* SettingsViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewViewModel.swift; sourceTree = "<group>"; };
+		AB43D1D32D59096F003D39E3 /* TranslatorViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslatorViewViewModel.swift; sourceTree = "<group>"; };
+		AB43D1D52D59096F003D39E3 /* ListenButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListenButtonView.swift; sourceTree = "<group>"; };
+		AB43D1D62D59096F003D39E3 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		AB43D1D72D59096F003D39E3 /* RecordingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordingView.swift; sourceTree = "<group>"; };
+		AB43D1D82D59096F003D39E3 /* ResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultView.swift; sourceTree = "<group>"; };
+		AB43D1D92D59096F003D39E3 /* SettingButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingButtonView.swift; sourceTree = "<group>"; };
+		AB43D1DA2D59096F003D39E3 /* SettingLinkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingLinkView.swift; sourceTree = "<group>"; };
+		AB43D1DB2D59096F003D39E3 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		AB43D1DC2D59096F003D39E3 /* TabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
+		AB43D1DD2D59096F003D39E3 /* TranslatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslatorView.swift; sourceTree = "<group>"; };
+		AB43D1DF2D59096F003D39E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AB43D1E02D59096F003D39E3 /* TranslatorTest.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TranslatorTest.entitlements; sourceTree = "<group>"; };
+		AB43D1E12D59096F003D39E3 /* TranslatorTestApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslatorTestApp.swift; sourceTree = "<group>"; };
 		ABB9120A2D5617130004C0C4 /* TranslatorTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TranslatorTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
-
-/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		AB0D337F2D578AE9008AA9B4 /* Exceptions for "TranslatorTest" folder in "TranslatorTest" target */ = {
-			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
-			membershipExceptions = (
-				Info.plist,
-			);
-			target = ABB912092D5617130004C0C4 /* TranslatorTest */;
-		};
-/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
-
-/* Begin PBXFileSystemSynchronizedRootGroup section */
-		ABB9120C2D5617130004C0C4 /* TranslatorTest */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-				AB0D337F2D578AE9008AA9B4 /* Exceptions for "TranslatorTest" folder in "TranslatorTest" target */,
-			);
-			path = TranslatorTest;
-			sourceTree = "<group>";
-		};
-/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		ABB912072D5617130004C0C4 /* Frameworks */ = {
@@ -47,10 +64,85 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AB43D1F82D590B4F003D39E3 /* TranslatorTest */ = {
+			isa = PBXGroup;
+			children = (
+				AB43D1FD2D590B86003D39E3 /* Models */,
+				AB43D2032D590BAC003D39E3 /* ViewModels */,
+				AB43D2042D590BAC003D39E3 /* Views */,
+				AB43D1FC2D590B82003D39E3 /* Others */,
+				AB43D2092D5A0467003D39E3 /* PreviewContent */,
+				AB43D2022D590BAB003D39E3 /* Resources */,
+				AB43D1DF2D59096F003D39E3 /* Info.plist */,
+				AB43D1E02D59096F003D39E3 /* TranslatorTest.entitlements */,
+				AB43D1E12D59096F003D39E3 /* TranslatorTestApp.swift */,
+			);
+			path = TranslatorTest;
+			sourceTree = "<group>";
+		};
+		AB43D1FC2D590B82003D39E3 /* Others */ = {
+			isa = PBXGroup;
+			children = (
+				AB43D1C92D59096F003D39E3 /* Extensions.swift */,
+			);
+			path = Others;
+			sourceTree = "<group>";
+		};
+		AB43D1FD2D590B86003D39E3 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		AB43D2022D590BAB003D39E3 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				AB43D1CD2D59096F003D39E3 /* Assets.xcassets */,
+				AB43D1CE2D59096F003D39E3 /* recording.gif */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		AB43D2032D590BAC003D39E3 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				AB43D1D02D59096F003D39E3 /* RecordingViewViewModel.swift */,
+				AB43D1D12D59096F003D39E3 /* ResultViewViewModel.swift */,
+				AB43D1D32D59096F003D39E3 /* TranslatorViewViewModel.swift */,
+				AB43D1D22D59096F003D39E3 /* SettingsViewViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		AB43D2042D590BAC003D39E3 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				AB43D1D52D59096F003D39E3 /* ListenButtonView.swift */,
+				AB43D1D62D59096F003D39E3 /* MainView.swift */,
+				AB43D1D72D59096F003D39E3 /* RecordingView.swift */,
+				AB43D1D82D59096F003D39E3 /* ResultView.swift */,
+				AB43D1D92D59096F003D39E3 /* SettingButtonView.swift */,
+				AB43D1DA2D59096F003D39E3 /* SettingLinkView.swift */,
+				AB43D1DB2D59096F003D39E3 /* SettingsView.swift */,
+				AB43D1DC2D59096F003D39E3 /* TabBarView.swift */,
+				AB43D1DD2D59096F003D39E3 /* TranslatorView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		AB43D2092D5A0467003D39E3 /* PreviewContent */ = {
+			isa = PBXGroup;
+			children = (
+				AB43D1CB2D59096F003D39E3 /* Preview Assets.xcassets */,
+			);
+			path = PreviewContent;
+			sourceTree = "<group>";
+		};
 		ABB912012D5617130004C0C4 = {
 			isa = PBXGroup;
 			children = (
-				ABB9120C2D5617130004C0C4 /* TranslatorTest */,
+				AB43D1F82D590B4F003D39E3 /* TranslatorTest */,
 				ABB9120B2D5617130004C0C4 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -77,9 +169,6 @@
 			buildRules = (
 			);
 			dependencies = (
-			);
-			fileSystemSynchronizedGroups = (
-				ABB9120C2D5617130004C0C4 /* TranslatorTest */,
 			);
 			name = TranslatorTest;
 			packageProductDependencies = (
@@ -131,6 +220,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AB43D1F12D59096F003D39E3 /* Preview Assets.xcassets in Resources */,
+				AB43D1F22D59096F003D39E3 /* Assets.xcassets in Resources */,
+				AB43D1F32D59096F003D39E3 /* recording.gif in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,6 +233,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AB43D1E22D59096F003D39E3 /* Extensions.swift in Sources */,
+				AB43D1E32D59096F003D39E3 /* RecordingViewViewModel.swift in Sources */,
+				AB43D1E42D59096F003D39E3 /* ResultViewViewModel.swift in Sources */,
+				AB43D1E52D59096F003D39E3 /* SettingsViewViewModel.swift in Sources */,
+				AB43D1E62D59096F003D39E3 /* TranslatorViewViewModel.swift in Sources */,
+				AB43D1E72D59096F003D39E3 /* ListenButtonView.swift in Sources */,
+				AB43D1E82D59096F003D39E3 /* MainView.swift in Sources */,
+				AB43D1E92D59096F003D39E3 /* RecordingView.swift in Sources */,
+				AB43D1EA2D59096F003D39E3 /* ResultView.swift in Sources */,
+				AB43D1EB2D59096F003D39E3 /* SettingButtonView.swift in Sources */,
+				AB43D1EC2D59096F003D39E3 /* SettingLinkView.swift in Sources */,
+				AB43D1ED2D59096F003D39E3 /* SettingsView.swift in Sources */,
+				AB43D1EE2D59096F003D39E3 /* TabBarView.swift in Sources */,
+				AB43D1EF2D59096F003D39E3 /* TranslatorView.swift in Sources */,
+				AB43D1F02D59096F003D39E3 /* TranslatorTestApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -269,7 +376,7 @@
 				CODE_SIGN_ENTITLEMENTS = TranslatorTest/TranslatorTest.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"TranslatorTest/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"TranslatorTest/PreviewContent\"";
 				DEVELOPMENT_TEAM = 7AVWTU2KYN;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
@@ -309,7 +416,7 @@
 				CODE_SIGN_ENTITLEMENTS = TranslatorTest/TranslatorTest.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"TranslatorTest/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"TranslatorTest/PreviewContent\"";
 				DEVELOPMENT_TEAM = 7AVWTU2KYN;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
