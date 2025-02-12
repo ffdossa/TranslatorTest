@@ -11,7 +11,7 @@ import SDWebImageSwiftUI
 
 struct HumanView: View {
    @StateObject private var modelData = ModelData()
-   @State private var imageName: String = "cat-big"
+   @State private var imageName = false
 
    var swapAction: () -> Void
 
@@ -35,25 +35,25 @@ struct HumanView: View {
                         .foregroundStyle(Color.white)
                      VStack {
                         Button {
-                           imageName = "cat-big"
+                           imageName = true
                         } label: {
                            ZStack {
                               RoundedRectangle(cornerRadius: 8)
                                  .frame(width: 70, height: 70)
                                  .foregroundStyle(Style.Colors.catBackgroundColor)
-                              Image("cat-small")
+                              Images.Pets.catSmall
                            }
                         }
 
                         Button {
-                           imageName = "dog-big"
+                           imageName = false
                         } label: {
                            ZStack {
                               RoundedRectangle(cornerRadius: 8)
                                  .frame(width: 70, height: 70)
                                  .foregroundStyle(Style.Colors.dogBackgroundColor)
 
-                              Image("dog-small")
+                              Images.Pets.dogSmall
                            }
                         }
                      }
@@ -62,7 +62,7 @@ struct HumanView: View {
             }
             Spacer()
 
-            Image(imageName)
+            imageName ? AnyView(Images.Pets.catBig) : AnyView(Images.Pets.dogBig)
 
             Spacer()
          }

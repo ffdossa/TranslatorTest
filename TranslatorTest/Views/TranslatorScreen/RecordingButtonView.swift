@@ -15,7 +15,6 @@ struct RecordingButtonView: View {
    @State private var isRecording = false
    @State private var navigateToResult = false
    @State private var showSettingsAlert = false
-   var onComplete: (String) -> Void = { _ in }
 
    var body: some View {
       Button {
@@ -36,7 +35,7 @@ struct RecordingButtonView: View {
                Text(isRecording ? "Stop Speak" : "Start Speak")
                   .font(.title3)
                   .bold()
-                  .foregroundStyle(Color.init(hexString: "#393736"))
+                  .foregroundStyle(Style.Colors.basicColor)
             }
          }
       }

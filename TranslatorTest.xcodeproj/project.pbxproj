@@ -31,6 +31,7 @@
 		AB4AB5CA2D5CEFB90050B398 /* RecordingButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB4AB5C92D5CEFB90050B398 /* RecordingButtonView.swift */; };
 		AB4AB5CE2D5D08DB0050B398 /* RecordingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB4AB5CD2D5D08DB0050B398 /* RecordingViewModel.swift */; };
 		AB4AB5D02D5D24210050B398 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB4AB5CF2D5D24210050B398 /* Color.swift */; };
+		AB4AB5D22D5D401C0050B398 /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB4AB5D12D5D401C0050B398 /* Image.swift */; };
 		AB866F6B2D5C0C100091EE44 /* translatorData.json in Resources */ = {isa = PBXBuildFile; fileRef = AB866F6A2D5C0C100091EE44 /* translatorData.json */; };
 		AB866F6F2D5CA6240091EE44 /* ToolBarButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB866F6E2D5CA6240091EE44 /* ToolBarButton.swift */; };
 /* End PBXBuildFile section */
@@ -61,6 +62,7 @@
 		AB4AB5C92D5CEFB90050B398 /* RecordingButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordingButtonView.swift; sourceTree = "<group>"; };
 		AB4AB5CD2D5D08DB0050B398 /* RecordingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordingViewModel.swift; sourceTree = "<group>"; };
 		AB4AB5CF2D5D24210050B398 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		AB4AB5D12D5D401C0050B398 /* Image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
 		AB866F6A2D5C0C100091EE44 /* translatorData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = translatorData.json; sourceTree = "<group>"; };
 		AB866F6E2D5CA6240091EE44 /* ToolBarButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolBarButton.swift; sourceTree = "<group>"; };
 		ABB9120A2D5617130004C0C4 /* TranslatorTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TranslatorTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -100,6 +102,7 @@
 			children = (
 				AB43D1C92D59096F003D39E3 /* Extensions.swift */,
 				AB4AB5CF2D5D24210050B398 /* Color.swift */,
+				AB4AB5D12D5D401C0050B398 /* Image.swift */,
 			);
 			path = Others;
 			sourceTree = "<group>";
@@ -288,6 +291,7 @@
 				AB43D1E52D59096F003D39E3 /* SettingsViewModel.swift in Sources */,
 				AB43D1E62D59096F003D39E3 /* TranslatorViewModel.swift in Sources */,
 				AB43D2EC2D5B3679003D39E3 /* ModelData.swift in Sources */,
+				AB4AB5D22D5D401C0050B398 /* Image.swift in Sources */,
 				AB43D1E72D59096F003D39E3 /* HumanView.swift in Sources */,
 				AB43D1E82D59096F003D39E3 /* MainView.swift in Sources */,
 				AB4AB5CA2D5CEFB90050B398 /* RecordingButtonView.swift in Sources */,

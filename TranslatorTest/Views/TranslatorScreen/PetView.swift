@@ -46,7 +46,7 @@ struct PetView: View {
                            .frame(width: 70, height: 70)
                            .foregroundStyle(Style.Colors.catBackgroundColor)
 
-                        Image("cat-face")
+                        Images.Pets.catFace
                            .padding(.top, 8)
                      }
                   }
@@ -59,7 +59,7 @@ struct PetView: View {
                            .frame(width: 70, height: 70)
                            .foregroundStyle(Style.Colors.dogBackgroundColor)
 
-                        Image("dog-face")
+                        Images.Pets.dogFace
                      }
                   }
                }

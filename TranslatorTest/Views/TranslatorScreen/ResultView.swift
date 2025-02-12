@@ -40,7 +40,7 @@ struct ResultView: View {
                      .bold()
                }
             }
-            Image("dog-big")
+            Images.Pets.dogBig
                .padding(.top, 125)
 
             Spacer()
