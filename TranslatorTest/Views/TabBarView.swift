@@ -8,40 +8,41 @@
 import SwiftUI
 
 struct TabBarView: View {
-  @Binding var tabSelected: Int
+   @Binding var tabSelected: Int
 
-  let tabBarItems: [(image: String, title: String)] = [
-    ("messages", "Translator"),
-    ("settings", "Settings")
-  ]
+   let tabBarItems: [(image: String, title: String)] = [
+      ("messages", "Translator"),
+      ("volume-high", "Sounds"),
+      ("note", "Articles"),
+      ("stop-circle", "Clicker")
+   ]
 
-  var body: some View {
-    Spacer()
-    ZStack(alignment: .center) {
-      RoundedRectangle(cornerRadius: 16)
-        .frame(width: 216, height: 82)
-        .foregroundStyle(Color.white)
-      HStack(spacing: 42) {
-        ForEach(0..<2) { index in
-          Button {
-            tabSelected = index + 1
-          } label: {
-            VStack {
-              Image(tabBarItems[index].image)
-                .tint(Color.init(hexString: "#292D32"))
+   var body: some View {
+      Spacer()
+      ZStack(alignment: .center) {
+         RoundedRectangle(cornerRadius: 16)
+            .frame(width: 350, height: 82)
+            .foregroundStyle(Color.white)
+         HStack(spacing: 42) {
+            ForEach(0..<4) { index in
+               Button {
+                  tabSelected = index + 1
+               } label: {
+                  VStack {
+                     Image(tabBarItems[index].image)
 
-              Text(tabBarItems[index].title)
-                .font(.caption2)
-                .foregroundStyle(Color.init(hexString: "#292D32"))
+                     Text(tabBarItems[index].title)
+                        .font(.caption2)
+                  }
+               }
             }
-          }
-        }
+         }
+         .tint(Style.Colors.basicColor)
       }
-    }
-    .padding(.bottom)
-  }
+      .padding(.bottom)
+   }
 }
 
 #Preview {
-  TabBarView(tabSelected: .constant(0))
+   TabBarView(tabSelected: .constant(0))
 }

@@ -1,0 +1,152 @@
+[
+    {
+        "humanResult": "I have a meeting soon.",
+        "catResult": "Too tired to move.",
+        "dogResult": "Squirrel!",
+        "id": 1001
+    },
+    {
+        "humanResult": "The sun is shining bright.",
+        "catResult": "I see a bird outside.",
+        "dogResult": "Let's go outside!",
+        "id": 1002
+    },
+    {
+        "humanResult": "I need a cup of coffee.",
+        "catResult": "Leave me alone.",
+        "dogResult": "Can I have a treat?",
+        "id": 1003
+    },
+    {
+        "humanResult": "The weather is nice today.",
+        "catResult": "Where did my toy go?",
+        "dogResult": "Tail wagging time!",
+        "id": 1004
+    },
+    {
+        "humanResult": "Have you seen my keys?",
+        "catResult": "I rule this house.",
+        "dogResult": "Please pet me.",
+        "id": 1005
+    },
+    {
+        "humanResult": "The weather is nice today.",
+        "catResult": "Purr... I like this.",
+        "dogResult": "Can I have a treat?",
+        "id": 1006
+    },
+    {
+        "humanResult": "This movie is amazing.",
+        "catResult": "Don't touch my tail.",
+        "dogResult": "My tail won't stop wagging!",
+        "id": 1007
+    },
+    {
+        "humanResult": "Can you help me?",
+        "catResult": "Where is my food?",
+        "dogResult": "Protecting my home.",
+        "id": 1008
+    },
+    {
+        "humanResult": "This movie is amazing.",
+        "catResult": "Knock, knock, I broke something.",
+        "dogResult": "Bark! Bark!",
+        "id": 1009
+    },
+    {
+        "humanResult": "Have you seen my keys?",
+        "catResult": "I rule this house.",
+        "dogResult": "I love my human.",
+        "id": 1010
+    },
+    {
+        "humanResult": "See you later!",
+        "catResult": "I hear something moving.",
+        "dogResult": "Nap time after playtime.",
+        "id": 1011
+    },
+    {
+        "humanResult": "See you later!",
+        "catResult": "I see a bird outside.",
+        "dogResult": "Fetch the ball!",
+        "id": 1012
+    },
+    {
+        "humanResult": "Good morning!",
+        "catResult": "Scratch, scratch, scratch.",
+        "dogResult": "Bark! Bark!",
+        "id": 1013
+    },
+    {
+        "humanResult": "I'm so tired today.",
+        "catResult": "You work, I sleep.",
+        "dogResult": "Sniff, sniff, new smell!",
+        "id": 1014
+    },
+    {
+        "humanResult": "Good morning!",
+        "catResult": "Where is my food?",
+        "dogResult": "Nap time after playtime.",
+        "id": 1015
+    },
+    {
+        "humanResult": "What a beautiful day!",
+        "catResult": "Chase the laser!",
+        "dogResult": "Squirrel!",
+        "id": 1016
+    },
+    {
+        "humanResult": "The sun is shining bright.",
+        "catResult": "I rule this house.",
+        "dogResult": "Tail wagging time!",
+        "id": 1017
+    },
+    {
+        "humanResult": "Let's cook something.",
+        "catResult": "I love this sunny spot.",
+        "dogResult": "I love car rides!",
+        "id": 1018
+    },
+    {
+        "humanResult": "What a beautiful day!",
+        "catResult": "Chase the laser!",
+        "dogResult": "I hear something!",
+        "id": 1019
+    },
+    {
+        "humanResult": "I'm so tired today.",
+        "catResult": "Don't touch my tail.",
+        "dogResult": "Squirrel!",
+        "id": 1020
+    },
+    {
+        "humanResult": "Good morning!",
+        "catResult": "Scratch, scratch, scratch.",
+        "dogResult": "I hear something!",
+        "id": 1021
+    },
+    {
+        "humanResult": "Let's go for a walk.",
+        "catResult": "Meow, feed me!",
+        "dogResult": "I love my human.",
+        "id": 1022
+    },
+    {
+        "humanResult": "I'm so tired today.",
+        "catResult": "Purr... I like this.",
+        "dogResult": "Tail wagging time!",
+        "id": 1023
+    },
+    {
+        "humanResult": "What a beautiful day!",
+        "catResult": "Scratch, scratch, scratch.",
+        "dogResult": "Can I have a treat?",
+        "id": 1024
+    },
+    {
+        "humanResult": "Let's go for a walk.",
+        "catResult": "Where is my food?",
+        "dogResult": "Time for a walk!",
+        "id": 1025
+    }
+]

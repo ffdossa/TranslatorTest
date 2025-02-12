@@ -8,25 +8,31 @@
 import SwiftUI
 
 struct MainView: View {
-  @State private var tabSelected = 1
+   @State private var tabSelected = 1
 
-  var body: some View {
-    NavigationView {
-      TabView(selection: $tabSelected) {
-        TranslatorView()
-          .tag(1)
+   var body: some View {
+      NavigationView {
+         TabView(selection: $tabSelected) {
+            TranslatorView()
+               .tag(1)
 
-        SettingsView()
-          .tag(2)
+            EmptyView()
+               .tag(2)
+
+            EmptyView()
+               .tag(3)
+
+            SettingsView()
+               .tag(4)
+         }
+         .overlay(alignment: .bottom) {
+            TabBarView(tabSelected: $tabSelected)
+         }
       }
-      .overlay(alignment: .bottom) {
-        TabBarView(tabSelected: $tabSelected)
-      }
-    }
-  }
+   }
 }
 
 
 #Preview {
-  MainView()
+   MainView()
 }
