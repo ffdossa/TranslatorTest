@@ -26,7 +26,7 @@ struct HumanView: View {
                      .padding(.trailing, 30)
                }
 
-               HStack(spacing: 35) {
+               HStack(spacing: 20) {
                   RecordingButtonView()
 
                   ZStack {

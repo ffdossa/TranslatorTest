@@ -16,12 +16,12 @@ class SettingsViewModel: ObservableObject {
    
    func setupSettingsItems() -> [ItemModel] {
       [
-         ItemModel(title: "Rate Us", link: "https://github.com/ffdossa/TranslatorTest"),
-         ItemModel(title: "Share App", link: "https://github.com/ffdossa/TranslatorTest"),
-         ItemModel(title: "Contact Us", link: "https://github.com/ffdossa/TranslatorTest"),
-         ItemModel(title: "Restore Purchases", link: "https://github.com/ffdossa/TranslatorTest"),
-         ItemModel(title: "Privacy Policy", link: "https://github.com/ffdossa/TranslatorTest"),
-         ItemModel(title: "Terms of Use", link: "https://github.com/ffdossa/TranslatorTest")
+         ItemModel(title: "Rate Us", link: "https://github.com/ffdossa"),
+         ItemModel(title: "Share App", link: "https://github.com/ffdossa"),
+         ItemModel(title: "Contact Us", link: "https://github.com/ffdossa"),
+         ItemModel(title: "Restore Purchases", link: "https://github.com/ffdossa"),
+         ItemModel(title: "Privacy Policy", link: "https://github.com/ffdossa"),
+         ItemModel(title: "Terms of Use", link: "https://github.com/ffdossa")
       ]
    }
 }
