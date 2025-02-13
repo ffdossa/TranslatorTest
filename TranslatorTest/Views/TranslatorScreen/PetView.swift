@@ -13,7 +13,7 @@ import SDWebImageSwiftUI
 struct PetView: View {
    @StateObject var viewModel = PetViewModel()
    @State private var isSettingsPresented = false
-   @State private var toShowResult = false
+   @State private var resultType: ResultType = .pet
 
    var swapAction: () -> Void
 
@@ -28,9 +28,7 @@ struct PetView: View {
                      .padding(.leading, 30)
                }
 
-               RecordingButtonView() {
-                  // SOME ACTION
-               }
+               RecordingView(resultType: $resultType)
             }
             Spacer()
 
@@ -101,9 +99,3 @@ struct PetView: View {
    }
 }
 
-
-//#Preview {
-//   PetView(toResult: ResultView(resultType: .pet)) {
-//
-//   }
-//}

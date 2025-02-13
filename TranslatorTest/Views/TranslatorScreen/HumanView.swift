@@ -9,9 +9,10 @@ import SwiftUI
 import AVFoundation
 import SDWebImageSwiftUI
 
+
 struct HumanView: View {
-   @StateObject private var modelData = ModelData()
-   @StateObject private var audioRecorder = RecordingViewModel()
+   @StateObject var viewModel = HumanViewModel()
+   @State private var resultType: ResultType = .human
    @State private var imageName = false
 
    var swapAction: () -> Void
@@ -28,9 +29,7 @@ struct HumanView: View {
                }
 
                HStack(spacing: 30) {
-                  RecordingButtonView() {
-                     // SOME ACTION
-                  }
+                  RecordingView(resultType: $resultType)
 
                   ZStack {
                      RoundedRectangle(cornerRadius: 16)

@@ -10,19 +10,16 @@ import SwiftUI
 import AVFoundation
 import SDWebImageSwiftUI
 
-struct RecordingButtonView: View {
+struct RecordingView: View {
    @StateObject var recordingViewModel = RecordingViewModel()
    @State private var isRecording = false
    @State private var showSettingsAlert = false
    @State private var toShowResult = false
-
-
-   var someAction: () -> Void
+   @Binding var resultType: ResultType
 
    var body: some View {
       Button {
          handleRecordingButton()
-         someAction()
       } label: {
          ZStack {
             RoundedRectangle(cornerRadius: 20)
@@ -43,8 +40,7 @@ struct RecordingButtonView: View {
             }
          }
       }
-//      .environmentObject(recordingViewModel)
-      NavigationLink(destination: ResultView(resultType: .human), isActive: $toShowResult) {
+      NavigationLink(destination: ResultView(resultType: resultType), isActive: $toShowResult) {
          EmptyView()
       }
 
@@ -97,11 +93,5 @@ struct RecordingButtonView: View {
       if UIApplication.shared.canOpenURL(settingsURL) {
          UIApplication.shared.open(settingsURL)
       }
-   }
-}
-
-#Preview {
-   RecordingButtonView() {
-
    }
 }

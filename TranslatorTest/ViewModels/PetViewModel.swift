@@ -7,9 +7,7 @@
 
 import Foundation
 
-class PetViewModel: ObservableObject {
-   @Published private var showResult = false
-   
+class PetViewModel: ObservableObject {   
    init() {
 
    }
