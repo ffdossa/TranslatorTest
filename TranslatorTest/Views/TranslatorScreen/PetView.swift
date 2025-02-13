@@ -12,7 +12,8 @@ import SDWebImageSwiftUI
 
 struct PetView: View {
    @StateObject var viewModel = PetViewModel()
-   @State private var isNavigating = false
+   @State private var isSettingsPresented = false
+   @State private var toShowResult = false
 
    var swapAction: () -> Void
 
@@ -27,10 +28,10 @@ struct PetView: View {
                      .padding(.leading, 30)
                }
 
-               RecordingButtonView()
-
+               RecordingButtonView() {
+                  // SOME ACTION
+               }
             }
-
             Spacer()
 
             ZStack {
@@ -66,9 +67,7 @@ struct PetView: View {
             }
 
             Spacer()
-
          }
-
          .toolbar {
             ToolbarItem(placement: .principal) {
                Text("Translator")
@@ -78,13 +77,13 @@ struct PetView: View {
 
             ToolbarItem(placement: .topBarTrailing) {
                ToolBarButton(image: Image("settings")) {
-                  isNavigating = true
+                  isSettingsPresented = true
                }
             }
          }
 
          .background(
-            NavigationLink(destination: SettingsView(), isActive: $isNavigating) {
+            NavigationLink(destination: SettingsView(), isActive: $isSettingsPresented) {
                EmptyView()
             }
          )
@@ -103,8 +102,8 @@ struct PetView: View {
 }
 
 
-#Preview {
-   PetView() {
-
-   }
-}
+//#Preview {
+//   PetView(toResult: ResultView(resultType: .pet)) {
+//
+//   }
+//}

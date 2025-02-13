@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct ChangeSpeakScreenView: View {
+   @State private var toShowResult = false
+   @State private var resultType: ResultType? = nil
    @State private var isShowingFirstView = true
 
    var body: some View {
@@ -32,12 +34,12 @@ struct TextSwapButton: View {
    var textSecond: String
 
    var body: some View {
-         HStack(spacing: 128) {
-               Text(textFirst)
-                  .bold()
+      HStack(spacing: 128) {
+         Text(textFirst)
+            .bold()
 
-               Text(textSecond)
-                  .bold()
+         Text(textSecond)
+            .bold()
       }
    }
 }

@@ -11,6 +11,7 @@ import SDWebImageSwiftUI
 
 struct HumanView: View {
    @StateObject private var modelData = ModelData()
+   @StateObject private var audioRecorder = RecordingViewModel()
    @State private var imageName = false
 
    var swapAction: () -> Void
@@ -26,8 +27,10 @@ struct HumanView: View {
                      .padding(.trailing, 30)
                }
 
-               HStack(spacing: 20) {
-                  RecordingButtonView()
+               HStack(spacing: 30) {
+                  RecordingButtonView() {
+                     // SOME ACTION
+                  }
 
                   ZStack {
                      RoundedRectangle(cornerRadius: 16)
@@ -85,7 +88,6 @@ struct HumanView: View {
       }
    }
 }
-
 
 #Preview {
    HumanView() {

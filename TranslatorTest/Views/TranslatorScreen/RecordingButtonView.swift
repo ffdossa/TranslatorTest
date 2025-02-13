@@ -11,14 +11,18 @@ import AVFoundation
 import SDWebImageSwiftUI
 
 struct RecordingButtonView: View {
-   @StateObject private var audioRecorder = RecordingViewModel()
+   @StateObject var recordingViewModel = RecordingViewModel()
    @State private var isRecording = false
-   @State private var navigateToResult = false
    @State private var showSettingsAlert = false
+   @State private var toShowResult = false
+
+
+   var someAction: () -> Void
 
    var body: some View {
       Button {
          handleRecordingButton()
+         someAction()
       } label: {
          ZStack {
             RoundedRectangle(cornerRadius: 20)
@@ -39,6 +43,10 @@ struct RecordingButtonView: View {
             }
          }
       }
+//      .environmentObject(recordingViewModel)
+      NavigationLink(destination: ResultView(resultType: .human), isActive: $toShowResult) {
+         EmptyView()
+      }
 
       .alert(isPresented: $showSettingsAlert) {
          Alert(
@@ -50,16 +58,12 @@ struct RecordingButtonView: View {
             })
          )
       }
-
-      NavigationLink(destination: ResultView(resultType: .pet), isActive: $navigateToResult) {
-         EmptyView()
-      }
    }
 
    private func handleRecordingButton() {
       switch AVAudioSession.sharedInstance().recordPermission {
       case .undetermined:
-         audioRecorder.requestPermission { granted in
+         recordingViewModel.requestPermission { granted in
             if granted {
                startRecording()
             }
@@ -67,7 +71,7 @@ struct RecordingButtonView: View {
       case .denied:
          showSettingsAlert = true
       case .granted:
-         if audioRecorder.isRecording {
+         if recordingViewModel.isRecording {
             stopRecording()
          } else {
             startRecording()
@@ -78,14 +82,14 @@ struct RecordingButtonView: View {
    }
 
    private func startRecording() {
-      audioRecorder.startRecording()
+      recordingViewModel.startRecording()
       isRecording = true
    }
 
-   private func stopRecording() {
-      audioRecorder.stopRecording()
+   func stopRecording() {
+      recordingViewModel.stopRecording()
       isRecording = false
-      navigateToResult = true
+      toShowResult = true
    }
 
    private func openSettings() {
@@ -97,5 +101,7 @@ struct RecordingButtonView: View {
 }
 
 #Preview {
-   RecordingButtonView()
+   RecordingButtonView() {
+
+   }
 }

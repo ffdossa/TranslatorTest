@@ -7,46 +7,51 @@
 
 import Foundation
 import AVFoundation
-
-import AVFoundation
+import Combine
 
 class RecordingViewModel: ObservableObject {
-    var audioRecorder: AVAudioRecorder?
-    @Published var isRecording = false
+   @Published var isRecording = false
+   @Published private var showResult = false
 
-    func requestPermission(completion: @escaping (Bool) -> Void) {
-        AVAudioSession.sharedInstance().requestRecordPermission { granted in
-            DispatchQueue.main.async {
-                completion(granted)
-            }
-        }
-    }
+   init() {
+      
+   }
 
-    func startRecording() {
-        let session = AVAudioSession.sharedInstance()
-        do {
-            try session.setCategory(.playAndRecord, mode: .default, options: .defaultToSpeaker)
-            try session.setActive(true)
+   var audioRecorder: AVAudioRecorder?
 
-            let fileURL = FileManager.default.temporaryDirectory.appendingPathComponent("recording.m4a")
-            let settings: [String: Any] = [
-                AVFormatIDKey: Int(kAudioFormatMPEG4AAC),
-                AVSampleRateKey: 44100,
-                AVNumberOfChannelsKey: 1,
-                AVEncoderAudioQualityKey: AVAudioQuality.high.rawValue
-            ]
+   func requestPermission(completion: @escaping (Bool) -> Void) {
+      AVAudioSession.sharedInstance().requestRecordPermission { granted in
+         DispatchQueue.main.async {
+            completion(granted)
+         }
+      }
+   }
 
-            audioRecorder = try AVAudioRecorder(url: fileURL, settings: settings)
-            audioRecorder?.record()
-            isRecording = true
-        } catch {
-            print("Failed to start recording: \(error.localizedDescription)")
-        }
-    }
+   func startRecording() {
+      let session = AVAudioSession.sharedInstance()
+      do {
+         try session.setCategory(.playAndRecord, mode: .default, options: .defaultToSpeaker)
+         try session.setActive(true)
 
-    func stopRecording() {
-        audioRecorder?.stop()
-        isRecording = false
-        try? AVAudioSession.sharedInstance().setActive(false)
-    }
+         let fileURL = FileManager.default.temporaryDirectory.appendingPathComponent("recording.m4a")
+         let settings: [String: Any] = [
+            AVFormatIDKey: Int(kAudioFormatMPEG4AAC),
+            AVSampleRateKey: 44100,
+            AVNumberOfChannelsKey: 1,
+            AVEncoderAudioQualityKey: AVAudioQuality.high.rawValue
+         ]
+
+         audioRecorder = try AVAudioRecorder(url: fileURL, settings: settings)
+         audioRecorder?.record()
+         isRecording = true
+      } catch {
+         print("Failed to start recording: \(error.localizedDescription)")
+      }
+   }
+
+   func stopRecording() {
+      audioRecorder?.stop()
+      isRecording = false
+      try? AVAudioSession.sharedInstance().setActive(false)
+   }
 }

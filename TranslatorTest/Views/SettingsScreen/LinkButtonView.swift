@@ -33,6 +33,7 @@ struct LinkButtonView: View {
       }
       .sheet(isPresented: $isSharing) {
          ShareSheet(items: [itemModel.link])
+            .presentationDetents([.fraction(0.4), .medium, .large])
       }
    }
 }

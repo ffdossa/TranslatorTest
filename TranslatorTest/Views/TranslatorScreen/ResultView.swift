@@ -8,15 +8,15 @@
 import SwiftUI
 
 enum ResultType {
-    case human
-    case pet
+   case human
+   case pet
 }
 
 struct ResultView: View {
+   @Environment(\.presentationMode) var presentationMode
    @StateObject private var modelData = ModelData()
    @StateObject var viewModel = ResultViewModel()
    @State private var isProcessing = true
-   @Environment(\.presentationMode) var presentationMode
 
    var resultType: ResultType
 
@@ -25,29 +25,22 @@ struct ResultView: View {
          VStack {
             Spacer()
 
-            Button {
-               if isProcessing {
-                  isProcessing = false
-                  modelData.loadRandomResult(for: resultType)
-               }
-            } label: {
-               ZStack {
-                  RoundedRectangle(cornerRadius: 16)
-                     .frame(width: 291, height: 142)
-                     .foregroundStyle(Color.init(hexString: "#D6DCFF"))
-                  Text(isProcessing ? "Process of translation..." : modelData.randomText)
-                     .font(.footnote)
-                     .bold()
-               }
+            ZStack {
+               RoundedRectangle(cornerRadius: 16)
+                  .frame(width: 291, height: 142)
+                  .foregroundStyle(Color.init(hexString: "#D6DCFF"))
+               Text(isProcessing ? "Process of translation..." : modelData.randomText)
+                  .font(.footnote)
+                  .bold()
             }
+
             Images.Pets.dogBig
                .padding(.top, 125)
 
             Spacer()
          }
-
          .onAppear {
-            modelData.loadRandomResult(for: resultType)
+            startProcessing()
          }
 
          .toolbar {
@@ -75,6 +68,13 @@ struct ResultView: View {
                             endPoint: .bottom))
       }
       .navigationBarBackButtonHidden(true)
+   }
+
+   private func startProcessing() {
+      DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
+         modelData.loadRandomResult(for: resultType)
+         isProcessing = false
+      }
    }
 }
 
