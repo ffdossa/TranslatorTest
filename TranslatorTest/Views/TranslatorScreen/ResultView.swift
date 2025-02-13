@@ -17,7 +17,7 @@ struct ResultView: View {
    @StateObject private var modelData = ModelData()
    @StateObject var viewModel = ResultViewModel()
    @State private var isProcessing = true
-   
+
    var resultType: ResultType
 
    var body: some View {
@@ -33,9 +33,9 @@ struct ResultView: View {
                   .font(.footnote)
                   .bold()
             }
+            Spacer()
 
             Images.Pets.catBig
-               .padding(.top, 125)
 
             Spacer()
          }

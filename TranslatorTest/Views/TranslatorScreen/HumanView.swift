@@ -20,7 +20,7 @@ struct HumanView: View {
    var body: some View {
       NavigationView {
          VStack {
-            VStack(spacing: 100) {
+            VStack(spacing: 90) {
                ZStack(alignment: .center) {
                   SwapButton(action: swapAction)
 
@@ -37,7 +37,7 @@ struct HumanView: View {
                         .foregroundStyle(Color.white)
                      VStack {
                         Button {
-                           imageName = true
+                           imageName = false
                         } label: {
                            ZStack {
                               RoundedRectangle(cornerRadius: 8)
@@ -48,7 +48,7 @@ struct HumanView: View {
                         }
 
                         Button {
-                           imageName = false
+                           imageName = true
                         } label: {
                            ZStack {
                               RoundedRectangle(cornerRadius: 8)
@@ -64,7 +64,7 @@ struct HumanView: View {
             }
             Spacer()
 
-            imageName ? AnyView(Images.Pets.catBig) : AnyView(Images.Pets.dogBig)
+            imageName ? AnyView(Images.Pets.dogBig) : AnyView(Images.Pets.catBig)
 
             Spacer()
          }

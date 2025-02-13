@@ -9,6 +9,7 @@ import SwiftUI
 
 struct SettingsView: View {
    @StateObject private var viewModel = SettingsViewModel()
+   @State private var isButtonPressed = false
 
    var body: some View {
       NavigationView {

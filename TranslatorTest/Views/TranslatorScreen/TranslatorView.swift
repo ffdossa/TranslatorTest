@@ -21,6 +21,6 @@ struct TranslatorView: View {
    }
 }
 
-#Preview {
-   MainView()
-}
+//#Preview {
+//   MainView()
+//}
