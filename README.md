@@ -1,6 +1,3 @@
-<p align="center">
- <img width="200px" src="img.png" alt="qr"/>
-</p>
 ![Screnshot](https://github.com/ffdossa/TranslatorTest/blob/main/IMG_3334.PNG)
 ![Image alt](https://github.com/ffdossa/TranslatorTest/blob/main/IMG_3335.PNG)
 ![Image alt](https://github.com/ffdossa/TranslatorTest/blob/main/IMG_3336.PNG)
