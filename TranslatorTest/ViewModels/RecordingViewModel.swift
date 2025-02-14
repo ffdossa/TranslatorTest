@@ -10,7 +10,6 @@ import AVFoundation
 
 class RecordingViewModel: ObservableObject {
    @Published var isRecording = false
-   @Published private var showResult = false
 
    init() {
       

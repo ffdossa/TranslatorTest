@@ -15,7 +15,6 @@ enum ResultType {
 struct ResultView: View {
    @Environment(\.presentationMode) var presentationMode
    @StateObject private var modelData = ModelData()
-   @StateObject var viewModel = ResultViewModel()
    @State private var isProcessing = true
 
    var resultType: ResultType

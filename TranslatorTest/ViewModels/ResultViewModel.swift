@@ -8,7 +8,8 @@
 import Foundation
 
 class ResultViewModel: ObservableObject {
-   
+   @Published private var showResult = false
+
    init() {
       
    }
