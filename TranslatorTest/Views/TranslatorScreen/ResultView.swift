@@ -16,6 +16,9 @@ struct ResultView: View {
    @Environment(\.presentationMode) var presentationMode
    @StateObject private var modelData = ModelData()
    @State private var isProcessing = true
+   @State private var isShowingResult = false
+   @State private var resultTypeHuman: ResultType = .human
+   @State private var resultTypePet: ResultType = .pet
 
    var resultType: ResultType
 
@@ -34,7 +37,7 @@ struct ResultView: View {
             }
             Spacer()
 
-            Images.Pets.catBig
+//            isShowingResult ? SwapImage(resultType: $resultTypeHuman, image: Types.Images.human) : SwapImage(resultType: $resultTypePet, image: Types.Images.pet)
 
             Spacer()
          }

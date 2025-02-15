@@ -22,17 +22,17 @@ struct TranslatorView: View {
             VStack(spacing: 90) {
                ZStack(alignment: .center) {
                   isShowingResult ?
-                  ChangeResultTypeView(resultType: $resultTypeHuman) {
+                  TopResultButtonView(resultType: $resultTypeHuman) {
                      isShowingResult.toggle()
                   } :
-                  ChangeResultTypeView(resultType: $resultTypePet) {
+                  TopResultButtonView(resultType: $resultTypePet) {
                      isShowingResult.toggle()
                   }
 
                   isShowingResult ?
-                  TextSwapButton(resultType: $resultTypeHuman, textFirst: "HUMAN", textSecond: "PET")
+                  TextSwapButton(textFirst: "HUMAN", textSecond: "PET")
                      .padding(.trailing, 30) :
-                  TextSwapButton(resultType: $resultTypePet, textFirst: "PET", textSecond: "HUMAN")
+                  TextSwapButton(textFirst: "PET", textSecond: "HUMAN")
                      .padding(.leading, 30)
                }
 
@@ -44,11 +44,11 @@ struct TranslatorView: View {
                         .frame(width: 107, height: 176)
                         .foregroundStyle(Color.white)
                      VStack {
-                        RightChangeView(resultType: $resultTypeHuman, image: Images.Pets.catSmall, color: Style.Colors.catBackgroundColor) {
+                        TrailingResultButtonView(resultType: $resultTypeHuman, image: Types.Images.human, color: Style.Colors.catBackgroundColor) {
                            isShowingResult = true
                         }
 
-                        RightChangeView(resultType: $resultTypePet, image: Images.Pets.dogSmall, color: Style.Colors.dogBackgroundColor) {
+                        TrailingResultButtonView(resultType: $resultTypePet, image: Types.Images.pet, color: Style.Colors.dogBackgroundColor) {
                            isShowingResult = false
                         }
                      }
@@ -57,7 +57,7 @@ struct TranslatorView: View {
             }
             Spacer()
 
-            isShowingResult ? AnyView(Images.Pets.catBig) : AnyView(Images.Pets.dogBig)
+            isShowingResult ? SwapImage(resultType: $resultTypeHuman, image: Types.Images.human) : SwapImage(resultType: $resultTypePet, image: Types.Images.pet)
 
             Spacer()
          }
@@ -81,8 +81,6 @@ struct TranslatorView: View {
    }
 }
 
-//#Preview {
-//   HumanView() {
-//
-//   }
-//}
+#Preview {
+   TranslatorView()
+}

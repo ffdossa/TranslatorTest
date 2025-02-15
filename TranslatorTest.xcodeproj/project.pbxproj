@@ -30,7 +30,6 @@
 		AB4AB5D22D5D401C0050B398 /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB4AB5D12D5D401C0050B398 /* Image.swift */; };
 		AB866F6B2D5C0C100091EE44 /* translatorData.json in Resources */ = {isa = PBXBuildFile; fileRef = AB866F6A2D5C0C100091EE44 /* translatorData.json */; };
 		AB866F6F2D5CA6240091EE44 /* ToolBarButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB866F6E2D5CA6240091EE44 /* ToolBarButton.swift */; };
-		AB8E25002D5FBEE000A55224 /* RightChangeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB8E24FF2D5FBEE000A55224 /* RightChangeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,7 +57,6 @@
 		AB4AB5D12D5D401C0050B398 /* Image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
 		AB866F6A2D5C0C100091EE44 /* translatorData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = translatorData.json; sourceTree = "<group>"; };
 		AB866F6E2D5CA6240091EE44 /* ToolBarButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolBarButton.swift; sourceTree = "<group>"; };
-		AB8E24FF2D5FBEE000A55224 /* RightChangeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RightChangeView.swift; sourceTree = "<group>"; };
 		ABB9120A2D5617130004C0C4 /* TranslatorTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TranslatorTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -161,7 +159,6 @@
 			children = (
 				AB43D1D52D59096F003D39E3 /* TranslatorView.swift */,
 				AB43D3182D5BA98E003D39E3 /* ChangeResultTypeView.swift */,
-				AB8E24FF2D5FBEE000A55224 /* RightChangeView.swift */,
 				AB4AB5C92D5CEFB90050B398 /* RecordingView.swift */,
 				AB43D1D82D59096F003D39E3 /* ResultView.swift */,
 			);
@@ -276,7 +273,6 @@
 				AB43D3192D5BA98E003D39E3 /* ChangeResultTypeView.swift in Sources */,
 				AB4AB5D02D5D24210050B398 /* Color.swift in Sources */,
 				AB43D1E22D59096F003D39E3 /* Extensions.swift in Sources */,
-				AB8E25002D5FBEE000A55224 /* RightChangeView.swift in Sources */,
 				AB43D1E42D59096F003D39E3 /* ResultViewModel.swift in Sources */,
 				AB43D1E52D59096F003D39E3 /* SettingsViewModel.swift in Sources */,
 				AB43D1E62D59096F003D39E3 /* TranslatorViewModel.swift in Sources */,
