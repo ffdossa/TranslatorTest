@@ -23,7 +23,7 @@ struct TranslatorView: View {
                   .frame(width: 350, height: 94)
                   .foregroundStyle(Color.white)
 
-               TypeResultButtonView(resultType: showResult ? .human : .pet) {
+               TypeResultButton(resultType: showResult ? .human : .pet) {
                   showResult.toggle()
                }
 
@@ -39,7 +39,7 @@ struct TranslatorView: View {
 
             Spacer()
          }
-         
+
          .toolbar {
             ToolbarItem(placement: .principal) {
                Text("Translator")

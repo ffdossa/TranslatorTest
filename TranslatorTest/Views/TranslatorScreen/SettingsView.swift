@@ -15,7 +15,7 @@ struct SettingsView: View {
       NavigationView {
          VStack(spacing: 14) {
             ForEach(viewModel.setupSettingsItems()) { link in
-               LinkButtonView(itemModel: link)
+               LinkButton(itemModel: link)
             }
             Spacer()
          }

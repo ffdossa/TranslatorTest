@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct LinkButtonView: View {
+struct LinkButton: View {
    @State private var isSharing = false
 
    let itemModel: ItemModel
@@ -50,5 +50,5 @@ struct ShareSheet: UIViewControllerRepresentable {
 }
 
 #Preview {
-   LinkButtonView(itemModel: ItemModel(title: "Rate Us", link: "https://github.com/ffdossa"))
+   LinkButton(itemModel: ItemModel(title: "Rate Us", link: "https://github.com/ffdossa"))
 }

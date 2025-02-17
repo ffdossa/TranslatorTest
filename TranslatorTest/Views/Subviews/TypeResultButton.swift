@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct TypeResultButtonView: View {
+struct TypeResultButton: View {
    @State var resultType: ResultType
    
    var action: () -> Void

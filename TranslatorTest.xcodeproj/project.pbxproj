@@ -15,7 +15,7 @@
 		AB43D1E72D59096F003D39E3 /* TranslatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB43D1D52D59096F003D39E3 /* TranslatorView.swift */; };
 		AB43D1E82D59096F003D39E3 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB43D1D62D59096F003D39E3 /* MainView.swift */; };
 		AB43D1EA2D59096F003D39E3 /* ResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB43D1D82D59096F003D39E3 /* ResultView.swift */; };
-		AB43D1EC2D59096F003D39E3 /* LinkButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB43D1DA2D59096F003D39E3 /* LinkButtonView.swift */; };
+		AB43D1EC2D59096F003D39E3 /* LinkButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB43D1DA2D59096F003D39E3 /* LinkButton.swift */; };
 		AB43D1ED2D59096F003D39E3 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB43D1DB2D59096F003D39E3 /* SettingsView.swift */; };
 		AB43D1EE2D59096F003D39E3 /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB43D1DC2D59096F003D39E3 /* TabBarView.swift */; };
 		AB43D1F02D59096F003D39E3 /* TranslatorTestApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB43D1E12D59096F003D39E3 /* TranslatorTestApp.swift */; };
@@ -23,7 +23,7 @@
 		AB43D1F22D59096F003D39E3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB43D1CD2D59096F003D39E3 /* Assets.xcassets */; };
 		AB43D1F32D59096F003D39E3 /* recording.gif in Resources */ = {isa = PBXBuildFile; fileRef = AB43D1CE2D59096F003D39E3 /* recording.gif */; };
 		AB43D2EC2D5B3679003D39E3 /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB43D2EB2D5B3679003D39E3 /* ModelData.swift */; };
-		AB43D3192D5BA98E003D39E3 /* TypeResultButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB43D3182D5BA98E003D39E3 /* TypeResultButtonView.swift */; };
+		AB43D3192D5BA98E003D39E3 /* TypeResultButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB43D3182D5BA98E003D39E3 /* TypeResultButton.swift */; };
 		AB4AB5CA2D5CEFB90050B398 /* RecordingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB4AB5C92D5CEFB90050B398 /* RecordingView.swift */; };
 		AB4AB5CE2D5D08DB0050B398 /* RecordingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB4AB5CD2D5D08DB0050B398 /* RecordingViewModel.swift */; };
 		AB4AB5D02D5D24210050B398 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB4AB5CF2D5D24210050B398 /* Color.swift */; };
@@ -43,14 +43,14 @@
 		AB43D1D52D59096F003D39E3 /* TranslatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslatorView.swift; sourceTree = "<group>"; };
 		AB43D1D62D59096F003D39E3 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		AB43D1D82D59096F003D39E3 /* ResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultView.swift; sourceTree = "<group>"; };
-		AB43D1DA2D59096F003D39E3 /* LinkButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkButtonView.swift; sourceTree = "<group>"; };
+		AB43D1DA2D59096F003D39E3 /* LinkButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkButton.swift; sourceTree = "<group>"; };
 		AB43D1DB2D59096F003D39E3 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		AB43D1DC2D59096F003D39E3 /* TabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
 		AB43D1DF2D59096F003D39E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AB43D1E02D59096F003D39E3 /* TranslatorTest.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TranslatorTest.entitlements; sourceTree = "<group>"; };
 		AB43D1E12D59096F003D39E3 /* TranslatorTestApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslatorTestApp.swift; sourceTree = "<group>"; };
 		AB43D2EB2D5B3679003D39E3 /* ModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
-		AB43D3182D5BA98E003D39E3 /* TypeResultButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeResultButtonView.swift; sourceTree = "<group>"; };
+		AB43D3182D5BA98E003D39E3 /* TypeResultButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeResultButton.swift; sourceTree = "<group>"; };
 		AB4AB5C92D5CEFB90050B398 /* RecordingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordingView.swift; sourceTree = "<group>"; };
 		AB4AB5CD2D5D08DB0050B398 /* RecordingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordingViewModel.swift; sourceTree = "<group>"; };
 		AB4AB5CF2D5D24210050B398 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
@@ -79,7 +79,6 @@
 				AB43D1FD2D590B86003D39E3 /* Models */,
 				AB43D2032D590BAC003D39E3 /* ViewModels */,
 				AB43D2042D590BAC003D39E3 /* Views */,
-				AB43D30E2D5B76CE003D39E3 /* CustomViews */,
 				AB43D1FC2D590B82003D39E3 /* Others */,
 				AB43D2092D5A0467003D39E3 /* PreviewContent */,
 				AB43D2022D590BAB003D39E3 /* Resources */,
@@ -131,10 +130,9 @@
 		AB43D2042D590BAC003D39E3 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				AB43D30F2D5B9165003D39E3 /* TranslatorScreen */,
-				AB43D3102D5B91AA003D39E3 /* SettingsScreen */,
 				AB43D1D62D59096F003D39E3 /* MainView.swift */,
-				AB43D1DC2D59096F003D39E3 /* TabBarView.swift */,
+				AB43D30F2D5B9165003D39E3 /* TranslatorScreen */,
+				AB71BA502D63914100052704 /* Subviews */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -147,32 +145,26 @@
 			path = PreviewContent;
 			sourceTree = "<group>";
 		};
-		AB43D30E2D5B76CE003D39E3 /* CustomViews */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = CustomViews;
-			sourceTree = "<group>";
-		};
 		AB43D30F2D5B9165003D39E3 /* TranslatorScreen */ = {
 			isa = PBXGroup;
 			children = (
 				AB43D1D52D59096F003D39E3 /* TranslatorView.swift */,
-				AB43D3182D5BA98E003D39E3 /* TypeResultButtonView.swift */,
 				AB4AB5C92D5CEFB90050B398 /* RecordingView.swift */,
 				AB43D1D82D59096F003D39E3 /* ResultView.swift */,
+				AB43D1DB2D59096F003D39E3 /* SettingsView.swift */,
 			);
 			path = TranslatorScreen;
 			sourceTree = "<group>";
 		};
-		AB43D3102D5B91AA003D39E3 /* SettingsScreen */ = {
+		AB71BA502D63914100052704 /* Subviews */ = {
 			isa = PBXGroup;
 			children = (
-				AB43D1DB2D59096F003D39E3 /* SettingsView.swift */,
-				AB43D1DA2D59096F003D39E3 /* LinkButtonView.swift */,
+				AB43D1DC2D59096F003D39E3 /* TabBarView.swift */,
+				AB43D3182D5BA98E003D39E3 /* TypeResultButton.swift */,
+				AB43D1DA2D59096F003D39E3 /* LinkButton.swift */,
 				AB866F6E2D5CA6240091EE44 /* ToolBarButton.swift */,
 			);
-			path = SettingsScreen;
+			path = Subviews;
 			sourceTree = "<group>";
 		};
 		ABB912012D5617130004C0C4 = {
@@ -270,7 +262,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AB43D3192D5BA98E003D39E3 /* TypeResultButtonView.swift in Sources */,
+				AB43D3192D5BA98E003D39E3 /* TypeResultButton.swift in Sources */,
 				AB4AB5D02D5D24210050B398 /* Color.swift in Sources */,
 				AB43D1E22D59096F003D39E3 /* Extensions.swift in Sources */,
 				AB43D1E42D59096F003D39E3 /* ResultViewModel.swift in Sources */,
@@ -282,7 +274,7 @@
 				AB43D1E82D59096F003D39E3 /* MainView.swift in Sources */,
 				AB4AB5CA2D5CEFB90050B398 /* RecordingView.swift in Sources */,
 				AB43D1EA2D59096F003D39E3 /* ResultView.swift in Sources */,
-				AB43D1EC2D59096F003D39E3 /* LinkButtonView.swift in Sources */,
+				AB43D1EC2D59096F003D39E3 /* LinkButton.swift in Sources */,
 				AB43D1ED2D59096F003D39E3 /* SettingsView.swift in Sources */,
 				AB866F6F2D5CA6240091EE44 /* ToolBarButton.swift in Sources */,
 				AB43D1EE2D59096F003D39E3 /* TabBarView.swift in Sources */,
