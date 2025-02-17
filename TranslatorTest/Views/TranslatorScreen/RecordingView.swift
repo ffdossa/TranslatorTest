@@ -14,16 +14,17 @@ struct RecordingView: View {
    @StateObject var recordingViewModel = RecordingViewModel()
    @State private var isRecording = false
    @State private var showSettingsAlert = false
-   @State private var toShowResult = false
-   @Binding var resultType: ResultType
+   @State private var showResult = false
+
+   var resultType: ResultType
 
    var body: some View {
       Button {
          handleRecordingButton()
       } label: {
          ZStack {
-            RoundedRectangle(cornerRadius: 20)
-               .frame(width: 178, height: 176, alignment: .center)
+            RoundedRectangle(cornerRadius: 60)
+               .frame(width: 188, height: 188, alignment: .center)
                .foregroundStyle(Color.white)
             VStack {
                isRecording ?
@@ -40,7 +41,11 @@ struct RecordingView: View {
             }
          }
       }
-      NavigationLink(destination: ResultView(resultType: resultType), isActive: $toShowResult) {
+
+      NavigationLink(destination: ResultView(
+         resultType: resultType,
+         image: resultType == .human ? Types.Images.human : Types.Images.pet
+      ), isActive: $showResult) {
          EmptyView()
       }
 
@@ -85,7 +90,7 @@ struct RecordingView: View {
    func stopRecording() {
       recordingViewModel.stopRecording()
       isRecording = false
-      toShowResult = true
+      showResult = true
    }
 
    private func openSettings() {

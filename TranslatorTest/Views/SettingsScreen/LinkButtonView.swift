@@ -9,8 +9,9 @@ import SwiftUI
 
 struct LinkButtonView: View {
    @State private var isSharing = false
-   let itemModel: ItemModel
 
+   let itemModel: ItemModel
+   
    var body: some View {
       Button {
          isSharing = true

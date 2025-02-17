@@ -12,55 +12,34 @@ import SDWebImageSwiftUI
 
 struct TranslatorView: View {
    @StateObject var viewModel = TranslatorViewModel()
-   @State private var resultTypeHuman: ResultType = .human
-   @State private var resultTypePet: ResultType = .pet
-   @State private var isShowingResult = false
+   @State private var showResult = false
+   @State private var toShowResult = false
 
    var body: some View {
       NavigationView {
-         VStack {
-            VStack(spacing: 90) {
-               ZStack(alignment: .center) {
-                  isShowingResult ?
-                  TopResultButtonView(resultType: $resultTypeHuman) {
-                     isShowingResult.toggle()
-                  } :
-                  TopResultButtonView(resultType: $resultTypePet) {
-                     isShowingResult.toggle()
-                  }
+         VStack(spacing: 110) {
+            ZStack(alignment: .center) {
+               RoundedRectangle(cornerRadius: 30)
+                  .frame(width: 350, height: 94)
+                  .foregroundStyle(Color.white)
 
-                  isShowingResult ?
-                  TextSwapButton(textFirst: "HUMAN", textSecond: "PET")
-                     .padding(.trailing, 30) :
-                  TextSwapButton(textFirst: "PET", textSecond: "HUMAN")
-                     .padding(.leading, 30)
+               TypeResultButtonView(resultType: showResult ? .human : .pet) {
+                  showResult.toggle()
                }
 
-               HStack(spacing: 30) {
-                  isShowingResult ? RecordingView(resultType: $resultTypeHuman) : RecordingView(resultType: $resultTypePet)
-
-                  ZStack {
-                     RoundedRectangle(cornerRadius: 16)
-                        .frame(width: 107, height: 176)
-                        .foregroundStyle(Color.white)
-                     VStack {
-                        TrailingResultButtonView(resultType: $resultTypeHuman, image: Types.Images.human, color: Style.Colors.catBackgroundColor) {
-                           isShowingResult = true
-                        }
-
-                        TrailingResultButtonView(resultType: $resultTypePet, image: Types.Images.pet, color: Style.Colors.dogBackgroundColor) {
-                           isShowingResult = false
-                        }
-                     }
-                  }
-               }
+               SwapButtonImage(
+                  firstImage: showResult ? Types.Images.human : Types.Images.pet,
+                  secondImage: showResult ? Types.Images.pet : Types.Images.human,
+                  firstColor: showResult ? Style.Colors.humanBackgroundColor : Style.Colors.petBackgroundColor,
+                  secondColor: showResult ? Style.Colors.petBackgroundColor : Style.Colors.humanBackgroundColor
+               )
             }
-            Spacer()
 
-            isShowingResult ? SwapImage(resultType: $resultTypeHuman, image: Types.Images.human) : SwapImage(resultType: $resultTypePet, image: Types.Images.pet)
+            RecordingView(resultType: showResult ? .human : .pet)
 
             Spacer()
          }
+         
          .toolbar {
             ToolbarItem(placement: .principal) {
                Text("Translator")

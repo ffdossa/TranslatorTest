@@ -16,30 +16,23 @@ struct ResultView: View {
    @Environment(\.presentationMode) var presentationMode
    @StateObject private var modelData = ModelData()
    @State private var isProcessing = true
-   @State private var isShowingResult = false
-//   @State private var resultTypeHuman: ResultType = .human
-//   @State private var resultTypePet: ResultType = .pet
 
    var resultType: ResultType
+   var image: Image
 
    var body: some View {
       NavigationView {
-         VStack {
-            Spacer()
-
+         VStack(spacing: 110) {
             ZStack {
-               RoundedRectangle(cornerRadius: 16)
-                  .frame(width: 291, height: 142)
+               RoundedRectangle(cornerRadius: 45)
+                  .frame(width: 291, height: 141)
                   .foregroundStyle(Color.init(hexString: "#D6DCFF"))
                Text(isProcessing ? "Process of translation..." : modelData.randomText)
                   .font(.footnote)
                   .bold()
             }
-            Spacer()
 
-            // SOME BIG SWAP IMAGE
-
-//            isShowingResult ? SwapImage(resultType: $resultTypeHuman, image: Types.Images.human) : SwapImage(resultType: $resultTypePet, image: Types.Images.pet)
+            SwapImage(resultType: resultType, image: image)
 
             Spacer()
          }

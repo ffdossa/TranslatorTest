@@ -20,8 +20,8 @@ struct TabBarView: View {
    var body: some View {
       Spacer()
       ZStack(alignment: .center) {
-         RoundedRectangle(cornerRadius: 16)
-            .frame(width: 350, height: 82)
+         RoundedRectangle(cornerRadius: 30)
+            .frame(width: 350, height: 94)
             .foregroundStyle(Color.white)
          HStack(spacing: 42) {
             ForEach(0..<4) { index in

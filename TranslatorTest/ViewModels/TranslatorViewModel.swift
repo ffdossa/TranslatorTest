@@ -9,6 +9,7 @@ import Foundation
 
 
 class TranslatorViewModel: ObservableObject {
+   @Published var showResult = false
 
    init() {
 
