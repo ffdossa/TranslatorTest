@@ -11,9 +11,7 @@ import AVFoundation
 class RecordingViewModel: ObservableObject {
    @Published var isRecording = false
 
-   init() {
-      
-   }
+   init() {}
 
    var audioRecorder: AVAudioRecorder?
 
